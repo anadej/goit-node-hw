@@ -10,7 +10,9 @@ function invokeAction({ action, id, name, email, phone }) {
       functions.getContactById(id).then((data) => console.table(data));
       break;
     case "add":
-      functions.addContact(name, email, phone);
+      functions
+        .addContact(name, email, phone)
+        .then((data) => console.table(data));
       break;
     case "remove":
       functions.removeContact(id);

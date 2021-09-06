@@ -10,7 +10,7 @@ https://prnt.sc/1rf40nf
 
 node index.js --action get --id 5
 
-https://prnt.sc/1rf41ub
+https://prnt.sc/1rf7vsz
 
 # Добавялем контакт
 

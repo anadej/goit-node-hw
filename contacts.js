@@ -18,7 +18,7 @@ const listContacts = async () => {
 const getContactById = async (contactId) => {
   try {
     const res = await listContacts();
-    return res.filter((contact) => contact.id === contactId);
+    return res.find((contact) => contact.id === contactId);
   } catch (error) {
     console.log(`error`, error);
   }
@@ -41,6 +41,7 @@ const addContact = async (name, email, phone) => {
     const newContact = { id: shortid.generate(), name, email, phone };
     const newContacts = JSON.stringify([...res, newContact]);
     await fs.writeFile(contactsPath, newContacts);
+    return newContact;
   } catch (error) {
     console.log(`error`, error);
   }
