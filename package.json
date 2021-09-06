@@ -1,0 +1,29 @@
+{
+  "name": "goit-node-hw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "start:dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anadej/goit-node-hw.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anadej/goit-node-hw/issues"
+  },
+  "homepage": "https://github.com/anadej/goit-node-hw#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "shortid": "^2.2.16",
+    "yargs": "^17.1.1"
+  }
+}
